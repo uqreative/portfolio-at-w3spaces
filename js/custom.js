@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('html').attr('data-theme', currentTheme);
 
     // Listen for a change event on the select dropdown
-    $('select[name="theme-switch"]').change(function() {
+    $('nav.navbar select[name="theme-switch"]').change(function() {
         // Get the new theme
         var newTheme = $(this).val();
         // Set the new theme
@@ -24,24 +24,12 @@ $(document).ready(function() {
 });
 // end of dark mode toggle ============================
 
-// Navbar include
-$(function(){
-    const navbarURL = './inc/navbar.html';
-
-    fetch(navbarURL)
-        .then(response => response.text())
-        .then(html => {
-        const navbarElement = document.getElementById('header');
-        navbarElement.innerHTML = html;
-        })
-        .catch(error => console.error(error));
-});
-
-$document.ready(function() {
+$(document).ready(function() {
     $(".navbar-burger").click(function() {
 
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
+        alert('berhasil di klik');
     });
 })  

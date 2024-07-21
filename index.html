@@ -1,74 +1,142 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
 
-    <link rel="stylesheet" href="/dist/openprops/openprops1.7.5.min.css">
-    <link rel="stylesheet" href="/dist/bulma-v101/bulma.css">
-    <link rel="stylesheet" href="/dist/select2/select2.min.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/custom.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
 
-    
-    
+  <link rel="stylesheet" href="./dist/openprops/openprops1.7.5.min.css">
+  <link rel="stylesheet" href="./dist/bulma-v101/bulma.css">
+  <link rel="stylesheet" href="./dist/select2/select2.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/custom.css">
+
+
+
 
 </head>
-  <body>
-    
-  
-    <header id="header">
-        <!-- coba append nav disini -->
-    </header>
 
-    <section class="section">
-        <div class="container"> 
-
-            <form action="">
-                <select class="pilihan-dark-mode" name="theme-switch" title="Select a state">
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                </select>
-            </form>
+<body>
 
 
-          <h1 class="title">
-            Hello World
-          </h1>
-          <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-          </p>
-          <div>
-            This is in Light Mode if the user hasn't set a preference, or if their preference is set to <code>light</code>.
-          </div>
-          
-          <div data-theme="dark">
-            This is in Dark Mode
-          </div>
-          
-          <div class="theme-dark">
-            This is also in Dark Mode
+  <header id="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="/images/common/navbar-logo.svg" alt="">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+        <div class="navbar-menu" id="navMenu">
+          <a class="navbar-item">Satu</a>
+          <a class="navbar-item">Dua</a>
+          <a class="navbar-item">Tiga</a>
+        </div>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Documentation
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item is-selected">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
           </div>
         </div>
-    </section>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+          <select class="pilihan-dark-mode" name="theme-switch" title="Select a state">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+      <div>
+        This is in Light Mode if the user hasn't set a preference, or if their preference is set to <code>light</code>.
+      </div>
+
+      <div data-theme="dark">
+        This is in Dark Mode
+      </div>
+
+      <div class="theme-dark">
+        This is also in Dark Mode
+      </div>
+    </div>
+  </section>
 
 
 
-    <footer>
-        <h1>This is a footer</h1>
-    </footer>
+  <footer>
+    <h1>This is a footer</h1>
+  </footer>
 
 
 
 
-  <script src="/dist/jquery/jquery-3.7.1.min.js"></script>
+  <script src="./dist/jquery/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/dist/select2/select2.min.js"></script>
+  <script src="./dist/select2/select2.min.js"></script>
   <script src="/js/custom.js"></script>
-  </body>
+</body>
+
 </html>
